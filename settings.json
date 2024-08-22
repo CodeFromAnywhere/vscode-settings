@@ -1,0 +1,47 @@
+{
+  // annoyingly breaks code sometimes
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  // always use prettier, onSave, and some prettier settings I like
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.trailingComma": "all",
+  "json.validate.enable": true,
+  "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
+
+  //theme follows system, sidebar right (no layout shift), minimal layout
+  "workbench.colorTheme": "Default Light+",
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+  "workbench.preferredLightColorTheme": "Default Light+",
+  "window.autoDetectColorScheme": true,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+
+  // don't ask for stuff
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "explorer.confirmPasteNative": false,
+
+  // wordwrap is useful to read
+  "editor.wordWrap": "on",
+
+  //don't search in build
+  "search.exclude": {
+    "**/*.code-search": true,
+    "**/node_modules": true,
+    "**/build": true
+  },
+
+  // file tabs wrapping. useful to see what I'm doing
+  "workbench.editor.wrapTabs": true,
+
+  // marp settings
+  "markdown.marp.enableHtml": true,
+
+  // typescript
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "typescript.updateImportsOnFileMove.enabled": "never"
+}
